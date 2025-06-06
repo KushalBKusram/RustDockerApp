@@ -1,0 +1,7 @@
+services:
+  healthcheck:
+    build: .
+    container_name: rust-healthcheck
+    ports:
+      - 8081:8080
+    command: cargo run /app/
